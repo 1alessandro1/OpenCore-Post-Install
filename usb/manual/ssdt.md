@@ -115,7 +115,7 @@ Where:
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GENG (Zero)) // <-- This is the modification required if you want to use the GENG method
+                Return (GENG (Zero, Zero)) // <-- This is the modification required if you want to use the GENG method
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device
